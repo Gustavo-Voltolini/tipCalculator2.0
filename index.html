@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main onchange="update()">
+    <h1>SPLI<br>TTER</h1>
+    <div class="container">
+      <div class="calculator">
+        <section class="Values">
+          <label class="titleBill" for="bill">Bill <div id="alertVazio2" class="alertVazio2"></div></label>
+          <input class="inputBill" id="bill" type="number" placeholder="$">
+          <br>
+          <label class="tip" for="tip"> Select Tip %</label>
+          <button onclick="calcular(5)" id="five" value=5 name="5">5%</button>
+          <button onclick="calcular(10)" id="dez" name="10">10%</button>
+          <button onclick="calcular(15)" id="quinze" name="15">15%</button>
+          <button onclick="calcular(20)" id="vinte" name="25">25%</button>
+          <button onclick="calcular(50)" id="cinque" name="50">50%</button>
+          <input id="custom" placeholder="Custom" type="number" name="custom">
+          <br>
+          <label class="people" for="people">Number of Peoples <div id="alertVazio1" class="alertVazio1"></div></label>
+          <input class="inputPerson" id='personEach' type="number">
+        </section>
+      </div>
+      <section>
+        <div class="total">
+          <div class="containerTotal">
+            <div class="containerTip">
+              <div class="tipPerson" for="">Tip Amount <p class="personMin">/person</div></p>
+              <div class="resultTip">$0.00</div>
+            </div>
+            <div class="containerTotal">
+              <div class="totalPerson" for="">Total <p class="personMin2">/person</p></div>
+              <div class="resultPerson">$0.00</div>
+            </div>
+            
+            <button onclick="reset()" class="reset" value="reset">RESET</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

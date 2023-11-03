@@ -1,0 +1,149 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+    font-family: Space Mono;
+    background: #c5e4e7;
+}
+
+.container {
+    height: 20rem;
+    width: 55%;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.calculator {
+    padding: 5%;
+    width: 60%; 
+}
+label{
+    display: block;
+}
+
+input {
+    height: 2rem;
+    width: 80%;
+    border: none;
+    background-color: aliceblue;
+}
+
+::placeholder{
+    color: #2c6166;
+}
+.titleBill,.tip, .people{
+    font-size: small;
+}
+#custom{
+    text-align: center;
+    font-size: medium;
+    font-family: Space Mono;
+    border-radius: 0.2rem;
+    background-color: #eff0f0;
+    height: 2.0rem;
+    -webkit-appearance: none; 
+    -moz-appearance: textfield; 
+    appearance: none;
+    width: 23.9%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#five, #dez, #quinze, #vinte, #cinque{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-family: Space Mono;
+    font-size: medium;
+    height: 2.1rem;
+    width: 25%;
+    border: none;
+    color: white;
+    background-color: #00454b;
+    border-radius:0.2rem;
+}
+#five:hover, #dez:hover, #quinze:hover, #vinte:hover, #cinque:hover{
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+.total {
+    border-radius: 0.5rem;
+    margin-left: -5%;
+    bottom: 15%;
+    color: white;
+    background-color: #00454b;
+    height: 17rem;
+    width:21rem;
+    position: relative;
+}
+
+.personMin, .personMin2{
+    font-size: small;
+    color: #c5e4e7;
+}
+.tipPerson{
+    top: 10%;
+    position: absolute;
+}
+.totalPerson{
+    right: 77%;
+    top: 40%;
+    position: absolute;
+}
+.resultPerson, .resultTip{
+    color:  hsl(172, 67%, 45%);
+    font-size: x-large;
+    position: absolute;
+    left: 70%;
+ 
+}
+.resultPerson{
+top: 38%;
+}
+.resultTip{
+    top: 10%;
+}
+.reset{
+    border: none;
+    color: #00454b;
+    background-color:#2c6166;
+    height: 2rem;
+    width: 70%;
+    top: 80%;
+    left: 15%;
+    position: absolute;
+}
+.reset:hover{
+    color: white;
+    background-color:  hsl(172, 67%, 45%);
+
+}
+h1 {
+    padding-bottom: 5%;
+    color: #14814e;
+    text-align: center;
+}
+.containerTotal{
+    text-align: left;
+    margin-left: 5%;
+}
+
+.alertVazio1{
+    color: red;
+    position: absolute;
+    left: 40%;
+    top: 56.5%;
+}
+.alertVazio2{
+    color: red;
+    position: absolute;
+    left: 40%;
+    top: 33.5%;
+}
